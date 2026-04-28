@@ -36,7 +36,9 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
+ol{
+    padding:2px;
+}
 /* Each recipe item */
 li {
     background: #fff;
@@ -56,4 +58,42 @@ a {
 /* Hover effect */
 a:hover {
     color: #c0392b;
+}
+
+.recipe-steps {
+    counter-reset: step;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.recipe-steps li {
+    list-style: none;
+    position: relative;
+    margin: 15px 0;
+    padding: 15px 15px 15px 50px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Custom number circle */
+.recipe-steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: #8b0000;
+    color: white;
+    font-weight: bold;
+    
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
