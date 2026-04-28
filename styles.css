@@ -1,0 +1,59 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+/* Center content */
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+/* Main title */
+h1 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #444;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Each recipe item */
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+/* Hover effect */
+a:hover {
+    color: #c0392b;
+}
